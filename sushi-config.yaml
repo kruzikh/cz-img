@@ -3,18 +3,18 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: ncez.fhir.cz.imaging
-canonical: https://www.ncez.cz/standards/fhir/imaging
-name: Imaging
-title: Imaging Implementation Guide
+id: ncez.cz.fhir.imaging
+canonical: https://ncez.mzcr.cz/standards/fhir/ig/imaging
+name: CzImagingImplementationGuide
+title: CZ Imaging IG
 description: Implementation Guide for Imaging Result Report
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 0.5.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-jurisdiction: urn:iso:std:iso:3166#CZ "Czech Republic" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#CZ "Czechia" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: Národní centrum elektronického zdravotnictví
   url: https://ncez.mzcr.cz
@@ -33,7 +33,8 @@ publisher:
 dependencies:
   hl7.fhir.uv.ips: current
   hl7.fhir.us.mcode: current
-  ncez.fhir.cz.core: current
+  ncez.cz.fhir.core: current
+  hl7.fhir.extensions.r5: 4.0.1
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
