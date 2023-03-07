@@ -78,7 +78,17 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Obsah: toc.html
+  Modely:
+    Logické modely: models.html
+  Nález obrazového komplementu: ImgStructure.html
+  Specifikace:
+    Profily: profiles.html
+    Terminologie: terminologies.html
+    Příklady: examples.html
+  Seznam artefaktů: artifacts.html
+  Downloads: downloads.html
+  Copyright: copyrights.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
