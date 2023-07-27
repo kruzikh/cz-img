@@ -32,20 +32,18 @@ Description: "Czech profile for an observation in a imaging result report"
 // from DE
 * category 1.. MS
 * category.coding MS
-* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.type = #value
 * category.coding ^slicing.discriminator.path = "$this"
 * category.coding ^slicing.rules = #open
 * category.coding contains
-//    loinc-observation 1..1 MS and
     observation-category 1..1 MS
-//* category.coding[loinc-observation] = $loinc#26436-6
 * category.coding[observation-category] = $observation-category#imaging
 // --------------
 //stuff from BeObservation
 //* code only BeObservationCodeableConcept
 * code MS
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\".\r\n\r\nThe implementer SHALL adhere to the preferred codes to use.\r\nThe recommended codification used is ERTN. It is allowed to use multiple codes within the FHIR CodeableConcept datatype. But the first code given must follow the following rules. (Other codes given will be for information purposes.)\r\n\r\nThe actual observation is preferably coded in ERTN \r\n\r\nIf that is not possible, the imaging department may send its own local code plus obligatory a text element to further explain. \r\n\r\nIf that is not possible the kind of observation is expressed only in text (allowed but NOT RECOMMENDED)"
-* code from $ertn
+* code from $ertn  // ToDo: discuss use of LOINC instead of ERTN
 //* code.coding ^slicing.discriminator.type = #value
 //* code.coding ^slicing.discriminator.path = "system"
 //* code.coding ^slicing.rules = #open
